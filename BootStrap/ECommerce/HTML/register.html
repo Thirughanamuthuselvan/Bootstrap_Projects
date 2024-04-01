@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../CSS/register.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg fixed-top navigation">
+            <div class="container-fluid">
+                <img src="../images/Thiru_Photo.jpg" alt="Sample Image" class="img-fluid col-md-2 rounded-circle"
+                    style="width: 40px;height: 40px;">
+                <a class="navbar-brand fw-bold p-2" href="#">TMS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active btn btn-success" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-success" href="register.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-success" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                    <span class="btn btn-danger fw-semibold">Sign out</span>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- registeration form -->
+    <div class="container mt-3">
+        <form action="" class="mt-lg-2 p-5">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <label for="name">Name</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control form-floating mb-3">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <label for="mail">Email</label>
+                <div class="col-md-8">
+                    <input type="email" class="form-control form-floating mb-3">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <label for="address">Address</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control form-floating mb-3">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <label for="city">City</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control form-floating mb-3">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <span for="state">State</span>
+                    <select name="state" id="state" class="form-control form-floating mb-3">
+                        <option value="tn" selected>Tamil Nadu</option>
+                        <option value="kl">Kerala</option>
+                        <option value="ka">Karnataka</option>
+                    </select>
+                </div>
+                <div class="col-md-5">
+                    <span for="zip">Zip/ Postal code</span>
+                    <input type="text" class="form-control form-floating mb-3">
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-md-8">
+                    <span for="country">Country</span>
+                    <select name="state" id="state" class="form-control form-floating mb-3">
+                        <option value="in" selected>India</option>
+                        <option value="us">USA</option>
+                        <option value="china">China</option>
+                    </select>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <label for="phone">Phone</label>
+                <div class="col-md-8">
+                    <input type="tel" class="form-control form-floating mb-3">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <label for="pass">Create a Password</label>
+                <div class="col-md-8">
+                    <input type="password" class="form-control">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="row">
+               
+                <div class="col-md-4">
+                    <input type="submit" class="btn btn-primary form-control form-floating mb-3 fw-bold"
+                        value="SIGN UP" style="border: outset;">
+                </div>
+                <div class="col-md-4">
+                    <input type="submit" class="btn btn-close-white form-control form-floating mb-3 fw-bold"
+                        value="Cancel" style="border: outset;">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+
+        </form>
+
+
+        <!-- footer -->
+        <footer class="bg-dark text-light fixed-bottom p-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; Copyright 2024 -Designed by TMS</p>
+                    </div>
+                    <div class="col-md-6 text-md-right">
+                        <a href="#" class="text-decoration-none">Privacy Policy</a> | <a href="#"
+                            class="text-decoration-none">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.navigation{
+    background-color: #5f8ba8;
+ }
+ footer{
+     color: #2c3e50 ;
+ }
+ form{
+    border: 1px solid black ;
+    margin: 23%;
+ }
+ label,span{
+    font-weight: bold;
+ }

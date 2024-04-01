@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg fixed-top navigation">
+            <div class="container-fluid">
+                <img src="../images/Thiru_Photo.jpg" alt="Sample Image" class="img-fluid col-md-2 rounded-circle"
+                    style="width: 40px;height: 40px;">
+                <a class="navbar-brand fw-bold p-2" href="#">TMS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active btn btn-success" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-success" href="register.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-success" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                    <a href="home.html"><span class="btn btn-danger fw-semibold">Sign out</span></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- login page -->
+
+    <div class="container mt-5 p-4">
+        <form action="">
+
+            <div class="row">
+                <div class="col-md-2" ></div>
+                <div class="col-md-8" >
+                    <i class="fas fa-sign-in-alt"></i>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <hr>
+                    <span class="fw-bold pt-2 pb-5">Sign In</span>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <input type="email" class="form-control fw-semibold form-floating mb-3 p-2 user-input" placeholder="User ID">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <input type="password" class="form-control fw-semibold user-input" placeholder="Password">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <div class="form-check pt-2">
+                        <input class="form-check-input " type="checkbox" id="exampleCheckbox" required>
+                        <label class="form-check-label" for="exampleCheckbox">
+                            Show Password
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-8"></div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <a href="#" class="forgot-pass" data-toggle="modal" data-target="#forgotPasswordModal">Forgot
+                            Password?</a>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <!-- Bootstrap Modal for Forgot Password -->
+            <div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog"
+                aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="forgotPasswordModalLabel">Forgot Password</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Add your forgot password form or instructions here -->
+                            <p>Enter your email address to reset your password.</p>
+                            <form>
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Reset Password</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <div class="form-check pt-2">
+                        <input class="form-check-input " type="checkbox" id="exampleCheckbox" required>
+                        <label class="form-check-label" for="exampleCheckbox">
+                            Keep me sign in
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <input type="submit" class="btn btn-primary form-control form-floating mb-3 fw-bold"
+                        value="Sign in">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="line-between-words">
+                        <pre class="fw-semibold mt-3 fw">New Account</pre>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <a type="submit" class="btn btn-primary form-control form-floating mb-3 fw-bold mt-3"
+                       href="register.html">Create New Account</a>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+    </div>
+
+    </form>
+    </div>
+
+    <footer class="bg-dark text-light fixed-bottom p-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; Copyright 2024 -Designed by TMS</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <a href="#" class="text-decoration-none">Privacy Policy</a> | <a href="#"
+                        class="text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
